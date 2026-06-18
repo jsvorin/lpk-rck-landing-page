@@ -130,7 +130,7 @@ export const id: TranslationData = {
     badge: 'HUBUNGI KAMI',
     title: 'Mulai Perjalanan Anda',
     subtitle: 'Jangan ragu untuk bertanya. Tim kami siap membantu memberikan informasi detail tentang program yang sesuai untuk Anda.',
-    address: 'Jl. KH. Abdullah Bin Nuh No. 106A Sawahgede, Cianjur, Jawa Barat 43211',
+    address: 'Jl. KH. Abdullah Bin Nuh No. 116A Sawahgede, Cianjur, Jawa Barat 43211',
     whatsapp: '+62 821-4822-2991',
     email: 'rcktrainingcenter@gmail.com',
     cta: 'Kirim Pesan WhatsApp',
