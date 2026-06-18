@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-jp: "Noto Sans JP", "Plus Jakarta Sans", sans-serif;
+
+  /* Brand Blues (from logo) */
+  --color-brand-blue: #2563EB;
+  --color-brand-navy: #0C2340;
+
+  /* Blue scale */
+  --color-blue-50: #EFF6FF;
+  --color-blue-100: #DBEAFE;
+  --color-blue-200: #BFDBFE;
+  --color-blue-300: #93C5FD;
+  --color-blue-400: #60A5FA;
+  --color-blue-500: #3B82F6;
+  --color-blue-600: #2563EB;
+  --color-blue-700: #1D4ED8;
+  --color-blue-800: #1E40AF;
+  --color-blue-900: #1E3A8A;
+
+  /* Navy scale */
+  --color-navy-50: #F0F4F8;
+  --color-navy-100: #D9E2EC;
+  --color-navy-200: #BCCCDC;
+  --color-navy-300: #9FB3C8;
+  --color-navy-400: #627D98;
+  --color-navy-500: #486581;
+  --color-navy-600: #334E68;
+  --color-navy-700: #243B53;
+  --color-navy-800: #163355;
+  --color-navy-900: #0C2340;
+  --color-navy-950: #061527;
+
+  /* Red scale */
+  --color-red-50: #FEF2F2;
+  --color-red-100: #FEE2E2;
+  --color-red-500: #EF4444;
+  --color-red-600: #DC2626;
+  --color-red-700: #B91C1C;
+  --color-red-800: #991B1B;
+
+  /* Supporting */
+  --color-gold: #D4A853;
+  --color-success: #16A34A;
+  --color-sakura: #FCEEF1;
+  --color-whatsapp: #25D366;
+  
+  --color-offwhite: #F8F9FC;
+  --color-cream: #FAF7F2;
+
+  /* shadcn/ui base colors */
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-navy-900);
+  --color-card: var(--color-white);
+  --color-card-foreground: var(--color-navy-900);
+  --color-popover: var(--color-white);
+  --color-popover-foreground: var(--color-navy-900);
+  --color-primary: var(--color-brand-blue);
+  --color-primary-foreground: var(--color-white);
+  --color-secondary: var(--color-navy-50);
+  --color-secondary-foreground: var(--color-navy-900);
+  --color-muted: var(--color-navy-50);
+  --color-muted-foreground: var(--color-navy-500);
+  --color-accent: var(--color-navy-50);
+  --color-accent-foreground: var(--color-navy-900);
+  --color-destructive: var(--color-red-500);
+  --color-destructive-foreground: var(--color-white);
+  --color-border: var(--color-navy-200);
+  --color-input: var(--color-navy-200);
+  --color-ring: var(--color-brand-blue);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .hero-gradient {
+    background: linear-gradient(135deg, var(--color-navy-900) 0%, var(--color-navy-950) 100%);
+  }
+  .hero-pattern {
+    background-image: repeating-linear-gradient(
+      120deg,
+      transparent,
+      transparent 80px,
+      rgba(37, 99, 235, 0.03) 80px,
+      rgba(37, 99, 235, 0.03) 81px
+    );
+  }
+  .gallery-track {
+    animation: scroll-left 40s linear infinite;
+  }
+  .gallery-track:hover {
+    animation-play-state: paused;
+  }
+  .gallery-track-reverse {
+    animation: scroll-right 45s linear infinite;
+  }
+  .gallery-track-reverse:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
