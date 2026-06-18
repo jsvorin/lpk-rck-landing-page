@@ -13,14 +13,14 @@ export const PricingSection = () => {
 
   return (
     <Section id="biaya" bg="gray">
-      <SectionHeader 
+      <SectionHeader
         badge={t.pricing.badge}
         title={t.pricing.title}
         subtitle={t.pricing.subtitle}
         centered
       />
 
-      <motion.div 
+      <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
@@ -65,7 +65,7 @@ export const PricingSection = () => {
                 {t.pricing.tokuteiGinou.badge}
               </Badge>
             </div>
-            
+
             <CardHeader className="pb-8 pt-12 text-center bg-blue-50/50">
               <CardTitle className="text-2xl font-bold text-blue-900 mb-2">{t.pricing.tokuteiGinou.name}</CardTitle>
               <div className="flex items-end justify-center gap-1 mb-2">

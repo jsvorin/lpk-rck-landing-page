@@ -47,13 +47,6 @@ export const id: TranslationData = {
         features: ['Gaji Standar Jepang', 'Visa hingga 5 tahun', 'Bisa Membawa Keluarga (Tipe 2)'],
       },
       {
-        id: 'kaigo',
-        title: 'Perawat Lansia (Kaigo)',
-        description: 'Program khusus perawat lansia dengan permintaan tertinggi dan standar gaji kompetitif.',
-        icon: 'heart',
-        features: ['Peluang Karir Jangka Panjang', 'Tunjangan Khusus', 'Fasilitas Asrama yang Baik'],
-      },
-      {
         id: 'bahasa',
         title: 'Kelas Bahasa Jepang (N5-N4)',
         description: 'Kelas intensif persiapan ujian JLPT/JFT-Basic dari level pemula hingga menengah.',

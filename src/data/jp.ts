@@ -47,15 +47,8 @@ export const jp: TranslationData = {
         features: ['日本水準の給与', '最大5年のビザ', '家族帯同可能（2号）'],
       },
       {
-        id: 'kaigo',
-        title: '介護 (Kaigo)',
-        description: '需要が高く、競争力のある給与水準を持つ介護職専門プログラム。',
-        icon: 'heart',
-        features: ['長期的なキャリアの機会', '特別手当', '優れた寮施設'],
-      },
-      {
         id: 'bahasa',
-        title: '日本語クラス (N5-N3)',
+        title: '日本語クラス (N5-N4)',
         description: '初級から中級までのJLPT/JFT-Basic試験対策の集中クラス。',
         icon: 'book-open',
         features: ['ネイティブスピーカー', '定期模擬試験', '会話重視'],
