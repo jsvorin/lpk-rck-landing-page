@@ -3,19 +3,19 @@ import { Section } from '../layout/Section';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const imagesRow1 = [
-  'public/dokumentasi1.jpeg',
-  'public/dokumentasi2.jpeg',
-  'public/dokumentasi3.jpeg',
-  'public/dokumentasi4.jpeg',
-  'public/dokumentasi5.jpeg',
+  'dokumentasi1.jpeg',
+  'dokumentasi2.jpeg',
+  'dokumentasi3.jpeg',
+  'dokumentasi4.jpeg',
+  'dokumentasi5.jpeg',
 ];
 
 const imagesRow2 = [
-  'public/dokumentasi6.jpeg',
-  'public/dokumentasi7.jpeg',
-  'public/dokumentasi8.jpeg',
-  'public/dokumentasi9.jpeg',
-  'public/dokumentasi10.jpeg',
+  'dokumentasi6.jpeg',
+  'dokumentasi7.jpeg',
+  'dokumentasi8.jpeg',
+  'dokumentasi9.jpeg',
+  'dokumentasi10.jpeg',
 ];
 
 export const GallerySection = () => {
