@@ -123,7 +123,7 @@ export const jp: TranslationData = {
     badge: 'お問い合わせ',
     title: 'あなたの旅を始めましょう',
     subtitle: 'お気軽にご質問ください。あなたに最適なプログラムについて詳しくご案内いたします。',
-    address: 'Jl. KH. Abdullah Bin Nuh No. 116A Sawahgede, Cianjur, West Java 43211',
+    address: 'Jl. KH Abdullah Bin Nuh No. 116 A, Sawah Gede, Cianjur District, Cianjur Regency, West Java 43212',
     whatsapp: '+62 821-4822-2991',
     email: 'rcktrainingcenter@gmail.com',
     cta: 'WhatsApp メッセージを送信',
