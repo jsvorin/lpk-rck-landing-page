@@ -13,7 +13,7 @@ export const ContactSection = () => {
   return (
     <Section id="kontak" bg="white">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        
+
         {/* Contact Info */}
         <motion.div
           variants={staggerContainer}
@@ -21,7 +21,7 @@ export const ContactSection = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <SectionHeader 
+          <SectionHeader
             badge={t.contact.badge}
             title={t.contact.title}
             subtitle={t.contact.subtitle}
@@ -78,13 +78,13 @@ export const ContactSection = () => {
         >
           <Card className="border-gray-200 overflow-hidden shadow-lg p-2">
             <div className="rounded-xl overflow-hidden aspect-square md:aspect-video lg:aspect-square bg-gray-100 relative">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.5471804245785!2d107.1350619746401!3d-6.824765393172828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6852fc6ebc1645%3A0xcb06dc6c3afbd777!2sJl.%20KH.%20Abdullah%20Bin%20Nuh%20No.106A%2C%20Sawah%20Gede%2C%20Kec.%20Cianjur%2C%20Kabupaten%20Cianjur%2C%20Jawa%20Barat%2043211!5e0!3m2!1sen!2sid!4v1709123456789!5m2!1sen!2sid" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={true} 
-                loading="lazy" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.4900119029257!2d107.12115337453949!3d-6.831698466826414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68532cc178cce3%3A0xd2cf31dafceea9c8!2sLPK%20RUMAH%20CIPTA%20KERJA!5e0!3m2!1sid!2sid!4v1781867803788!5m2!1sid!2sid"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-500"
                 title="Lokasi LPK Rumah Cipta Kerja"
