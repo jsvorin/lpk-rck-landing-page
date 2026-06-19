@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion } from 'motion/react';
-import { Menu, Globe } from 'lucide-react';
+import { Menu, Globe, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
+// SheetClose di-import lagi dengan aman
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 
 export const Navbar = () => {
@@ -15,7 +16,7 @@ export const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      const sections = t.nav.map(item => item.id);
+      const sections = t.nav.map((item: any) => item.id);
       let current = 'home';
 
       for (const section of sections) {
@@ -35,29 +36,47 @@ export const Navbar = () => {
     setLanguage(language === 'id' ? 'jp' : 'id');
   };
 
+  // Logic NavLinks Dipecah biar SheetClose cuma jalan di Mobile
   const NavLinks = ({ mobile = false }) => (
     <>
-      {t.nav.map((item) => (
-        <a
-          key={item.id}
-          href={item.href}
-          className={cn(
-            'transition-colors font-medium',
-            mobile ? 'text-lg py-4 block border-b border-navy-800 text-white hover:text-blue-400' : 'text-sm relative px-2 py-1',
-            !mobile && activeSection === item.id ? 'text-blue-600' : (!mobile ? 'text-navy-700 hover:text-blue-600' : '')
-          )}
-        >
-          {item.label}
-          {!mobile && activeSection === item.id && (
-            <motion.div
-              layoutId="navbar-indicator"
-              className="absolute bottom-0 left-0 right-0 h-[2px] bg-blue-600 rounded-full"
-              initial={false}
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            />
-          )}
-        </a>
-      ))}
+      {t.nav.map((item: any) => {
+
+        // 1. VERSI MOBILE (Aman dibungkus SheetClose karena ada di dalam tag Sheet)
+        if (mobile) {
+          return (
+            <SheetClose asChild key={item.id}>
+              <a
+                href={item.href}
+                className="block text-base py-3 px-4 rounded-xl text-gray-300 hover:bg-white/10 hover:text-white transition-all font-medium"
+              >
+                {item.label}
+              </a>
+            </SheetClose>
+          );
+        }
+
+        // 2. VERSI DESKTOP (Tanpa SheetClose, jadi ga bakal bikin error layar putih)
+        return (
+          <a
+            key={item.id}
+            href={item.href}
+            className={cn(
+              'transition-all font-medium text-sm relative px-2 py-1',
+              activeSection === item.id ? 'text-blue-600' : 'text-navy-700 hover:text-blue-600'
+            )}
+          >
+            {item.label}
+            {activeSection === item.id && (
+              <motion.div
+                layoutId="navbar-indicator"
+                className="absolute bottom-0 left-0 right-0 h-[2px] bg-blue-600 rounded-full"
+                initial={false}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              />
+            )}
+          </a>
+        );
+      })}
     </>
   );
 
@@ -76,6 +95,7 @@ export const Navbar = () => {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8">
           <div className="flex items-center gap-6">
+            {/* NavLinks di sini memicu versi Desktop (tanpa SheetClose) */}
             <NavLinks />
           </div>
 
@@ -101,6 +121,7 @@ export const Navbar = () => {
             <span className="text-xs font-bold">{language === 'id' ? 'ID' : 'JP'}</span>
           </button>
 
+          {/* Penggunaan Sheet secara native */}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="text-navy-900">
@@ -108,19 +129,36 @@ export const Navbar = () => {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-navy-950 text-white border-navy-800 w-[300px] sm:w-[400px]">
+
+            <SheetContent side="right" className="bg-navy-900 text-white border-navy-800 w-[280px] sm:w-[350px] p-0 flex flex-col">
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-              <div className="mt-8 flex flex-col h-full">
-                <nav className="flex flex-col gap-2">
+
+              <div className="p-6 pb-2">
+                <h2 className="text-xl font-bold text-white">Menu</h2>
+              </div>
+
+              <div className="flex-1 overflow-y-auto px-4 py-2">
+                <nav className="flex flex-col space-y-1">
+                  {/* NavLinks di sini memicu versi Mobile (pakai SheetClose) */}
                   <NavLinks mobile />
                 </nav>
-                <div className="mt-auto mb-8 space-y-4">
-                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white" size="lg" asChild>
+              </div>
+
+              <div className="p-6 border-t border-white/10 bg-navy-900/50 mt-auto">
+                <SheetClose asChild>
+                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white rounded-xl mb-6 shadow-lg shadow-red-600/20 py-6" asChild>
                     <a href="#kontak">{t.hero.ctaPrimary}</a>
                   </Button>
-                  <div className="text-sm text-navy-300 space-y-1">
-                    <p>📍 {t.contact.address.split(',')[0]}</p>
-                    <p>📱 {t.contact.whatsapp}</p>
+                </SheetClose>
+
+                <div className="flex flex-col space-y-3 text-sm text-gray-400">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-red-500" />
+                    <span>{t.contact.address.split(',')[0]}</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-4 h-4 shrink-0 text-red-500" />
+                    <span>{t.contact.whatsapp}</span>
                   </div>
                 </div>
               </div>
