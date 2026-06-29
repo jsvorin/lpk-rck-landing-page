@@ -21,12 +21,12 @@ export const AboutSection = () => {
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         {/* Left: Content */}
         <div>
-          <SectionHeader 
+          <SectionHeader
             badge={t.about.badge}
             title={t.about.title}
           />
-          
-          <motion.div 
+
+          <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
@@ -43,7 +43,7 @@ export const AboutSection = () => {
         </div>
 
         {/* Right: Stats Grid */}
-        <motion.div 
+        <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -53,7 +53,7 @@ export const AboutSection = () => {
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
-              <motion.div 
+              <motion.div
                 key={index}
                 variants={fadeUp}
                 className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
@@ -91,7 +91,7 @@ export const AboutSection = () => {
             </p>
             <div className="pt-2">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-lg shadow-blue-500/20 h-12 px-6 flex items-center gap-2 group w-full sm:w-auto text-sm font-semibold transition-all" asChild>
-                <a href="/company-profile.pdf" download="Company_Profile_LPK_Rumah_Cipta_Kerja.pdf">
+                <a href="/compro-2026.pdf" download="Company_Profile_LPK_Rumah_Cipta_Kerja.pdf">
                   <Download className="w-4 h-4 shrink-0 group-hover:-translate-y-0.5 transition-transform" />
                   <span>{t.about.companyProfile.downloadBtn}</span>
                 </a>
@@ -156,7 +156,7 @@ export const AboutSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {t.about.legal.items.map((item, idx) => {
             return (
-              <div 
+              <div
                 key={idx}
                 className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-blue-200 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group"
               >
