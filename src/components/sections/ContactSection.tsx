@@ -59,10 +59,17 @@ export const ContactSection = () => {
             </motion.div>
           </div>
 
-          <motion.div variants={fadeUp}>
-            <Button size="lg" className="bg-whatsapp hover:bg-[#20BD5A] text-white rounded-xl shadow-lg shadow-whatsapp/20 h-14 px-8 w-full md:w-auto text-base group" asChild>
-              <a href={`https://wa.me/${t.contact.whatsapp.replace(/[^0-9]/g, '')}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+          <motion.div variants={fadeUp} className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-4">
+            <Button size="lg" className="bg-whatsapp hover:bg-[#20BD5A] text-white rounded-xl shadow-lg shadow-whatsapp/20 h-14 px-8 w-full sm:w-auto text-base group" asChild>
+              <a href={`https://wa.me/${t.contact.whatsapp.replace(/[^0-9]/g, '')}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
                 {t.contact.cta}
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </Button>
+
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-lg shadow-blue-500/20 h-14 px-8 w-full sm:w-auto text-base group animate-pulse hover:animate-none" asChild>
+              <a href="https://forms.gle/MbH75F2zC7WVzuZq6" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                {t.contact.gformCta}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>

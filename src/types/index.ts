@@ -29,6 +29,14 @@ export interface Testimonial {
   image?: string;
 }
 
+export interface ServiceHighlight {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  icon: string;
+}
+
 export interface FAQ {
   id: string;
   question: string;
@@ -44,6 +52,12 @@ export interface TranslationData {
     ctaPrimary: string;
     ctaSecondary: string;
     trustBadges: string[];
+    heroButtons: {
+      ssw: string;
+      jlpt: string;
+      jobMatching: string;
+      visaApproved: string;
+    };
   };
   about: {
     badge: string;
@@ -55,12 +69,35 @@ export interface TranslationData {
       partners: string;
       experience: string;
     };
+    companyProfile: {
+      title: string;
+      description: string;
+      visionTitle: string;
+      visionText: string;
+      missionTitle: string;
+      missionItems: string[];
+      downloadBtn: string;
+    };
+    legal: {
+      title: string;
+      subtitle: string;
+      items: {
+        title: string;
+        detail: string;
+        icon: string;
+      }[];
+    };
   };
   programs: {
     badge: string;
     title: string;
     subtitle: string;
     items: Program[];
+    serviceHighlights: ServiceHighlight[];
+    serviceHighlightsTitle: string;
+    serviceHighlightsSubtitle: string;
+    prevButton: string;
+    nextButton: string;
   };
   pricing: {
     badge: string;
@@ -99,6 +136,7 @@ export interface TranslationData {
     whatsapp: string;
     email: string;
     cta: string;
+    gformCta: string;
   };
   footer: {
     description: string;

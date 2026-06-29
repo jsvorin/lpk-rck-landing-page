@@ -124,3 +124,30 @@
   0% { transform: translateX(-50%); }
   100% { transform: translateX(0); }
 }
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Service Highlights Card */
+.service-highlights-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+}
+
+.service-highlights-card .service-tab-btn {
+  white-space: nowrap;
+}
+
+/* Hero Service Buttons */
+.hero-service-btn {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+@media (max-width: 640px) {
+  .service-highlights-card .service-tab-btn {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
