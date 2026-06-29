@@ -91,7 +91,7 @@ export const AboutSection = () => {
             </p>
             <div className="pt-2">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-lg shadow-blue-500/20 h-12 px-6 flex items-center gap-2 group w-full sm:w-auto text-sm font-semibold transition-all" asChild>
-                <a href="/compro-2026.pdf" download="Company_Profile_LPK_Rumah_Cipta_Kerja.pdf">
+                <a href="/company-profile-RCK.pdf" download="Company_Profile_LPK_Rumah_Cipta_Kerja.pdf">
                   <Download className="w-4 h-4 shrink-0 group-hover:-translate-y-0.5 transition-transform" />
                   <span>{t.about.companyProfile.downloadBtn}</span>
                 </a>
