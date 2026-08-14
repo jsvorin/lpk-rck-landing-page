@@ -93,7 +93,6 @@ export interface TranslationData {
         description?: string;
       }[];
     };
-    team?: { badge: string; title: string; subtitle: string; members: any[]; };
     legal: {
       title: string;
       subtitle: string;
