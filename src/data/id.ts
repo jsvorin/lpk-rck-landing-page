@@ -46,6 +46,61 @@ export const id: TranslationData = {
       ],
       downloadBtn: 'Download Company Profile',
     },
+    team: {
+      badge: 'TIM KAMI',
+      title: 'Struktur Organisasi & Tim Kami',
+      subtitle: 'Didukung oleh para profesional berpengalaman yang berdedikasi untuk kesuksesan Anda di Jepang.',
+      members: [
+        {
+          id: 'direktur',
+          name: 'Ali Hildan',
+          role: 'Direktur',
+          category: 'direktur',
+          image: '/team/ali-hildan.jpg',
+          kanjiRole: '代表取締役'
+        },
+        {
+          id: 'sekretaris',
+          name: 'Sammy',
+          role: 'Sekretaris',
+          category: 'sekretaris',
+          image: '/team/sammy.jpg',
+          kanjiRole: '事務局長'
+        },
+        {
+          id: 'pic',
+          name: 'Suhendi',
+          role: 'PIC Support & Pendampingan',
+          category: 'pic',
+          image: '/team/suhendi.jpg',
+          kanjiRole: '支援責任者'
+        },
+        {
+          id: 'sensei1',
+          name: 'Adi Cahya',
+          role: 'Sensei / Pengajar',
+          category: 'sensei',
+          image: '/team/adi-cahya.jpg',
+          kanjiRole: '講師'
+        },
+        {
+          id: 'sensei2',
+          name: 'Rayrha P.C',
+          role: 'Sensei / Pengajar',
+          category: 'sensei',
+          image: '/team/rayrha-pc.jpg',
+          kanjiRole: '講師'
+        },
+        {
+          id: 'sensei3',
+          name: 'Resti Lusiani',
+          role: 'Sensei / Pengajar',
+          category: 'sensei',
+          image: '/team/resti-lusiani.jpg',
+          kanjiRole: '講師'
+        }
+      ]
+    },
     legal: {
       title: 'Legalitas & Izin Operasional',
       subtitle: 'Sebagai lembaga resmi, kami menjamin seluruh legalitas operasional kami telah diakui dan terdaftar resmi oleh instansi pemerintah terkait.',

@@ -78,6 +78,22 @@ export interface TranslationData {
       missionItems: string[];
       downloadBtn: string;
     };
+    team: {
+      badge: string;
+      title: string;
+      subtitle: string;
+      aspectRatioLabel?: string;
+      members: {
+        id: string;
+        name: string;
+        role: string;
+        category: 'direktur' | 'sekretaris' | 'pic' | 'sensei';
+        image: string;
+        kanjiRole?: string;
+        description?: string;
+      }[];
+    };
+    team?: { badge: string; title: string; subtitle: string; members: any[]; };
     legal: {
       title: string;
       subtitle: string;

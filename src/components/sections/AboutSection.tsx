@@ -4,6 +4,7 @@ import { Section, SectionHeader } from '../layout/Section';
 import { Users, Building2, Calendar, Target, FileText, Shield, Briefcase, Award, Download } from 'lucide-react';
 import { fadeUp, staggerContainer } from '@/lib/animations';
 import { Button } from '@/components/ui/button';
+import { TeamSection } from './TeamSection';
 
 export const AboutSection = () => {
   const { t } = useLanguage();
@@ -132,6 +133,8 @@ export const AboutSection = () => {
           </div>
         </div>
       </motion.div>
+
+      <TeamSection />
 
       {/* Legalitas & Izin Operasional Subsection */}
       <motion.div

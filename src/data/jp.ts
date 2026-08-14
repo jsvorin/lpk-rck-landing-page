@@ -46,6 +46,61 @@ export const jp: TranslationData = {
       ],
       downloadBtn: '会社案内をダウンロード (PDF)',
     },
+    team: {
+      badge: '私たちのチーム',
+      title: '組織構成とチーム',
+      subtitle: '日本での成功を支援する、経験豊富なプロフェッショナルなチームです。',
+      members: [
+        {
+          id: 'direktur',
+          name: 'Ali Hildan',
+          role: '代表取締役',
+          category: 'direktur',
+          image: '/team/ali-hildan.jpg',
+          kanjiRole: '代表取締役'
+        },
+        {
+          id: 'sekretaris',
+          name: 'Sammy',
+          role: '事務局長',
+          category: 'sekretaris',
+          image: '/team/sammy.jpg',
+          kanjiRole: '事務局長'
+        },
+        {
+          id: 'pic',
+          name: 'Suhendi',
+          role: 'サポート・同行責任者',
+          category: 'pic',
+          image: '/team/suhendi.jpg',
+          kanjiRole: '支援責任者'
+        },
+        {
+          id: 'sensei1',
+          name: 'Adi Cahya',
+          role: '日本語講師',
+          category: 'sensei',
+          image: '/team/adi-cahya.jpg',
+          kanjiRole: '講師'
+        },
+        {
+          id: 'sensei2',
+          name: 'Rayrha P.C',
+          role: '日本語講師',
+          category: 'sensei',
+          image: '/team/rayrha-pc.jpg',
+          kanjiRole: '講師'
+        },
+        {
+          id: 'sensei3',
+          name: 'Resti Lusiani',
+          role: '日本語講師',
+          category: 'sensei',
+          image: '/team/resti-lusiani.jpg',
+          kanjiRole: '講師'
+        }
+      ]
+    },
     legal: {
       title: '法的資格＆運営許可証',
       subtitle: '公式な職業訓練機関として、当校のすべての運営ライセンスは関連する政府機関によって承認され、公式に登録されています。',
