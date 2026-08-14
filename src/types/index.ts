@@ -87,7 +87,7 @@ export interface TranslationData {
         id: string;
         name: string;
         role: string;
-        category: 'direktur' | 'sekretaris' | 'pic' | 'sensei';
+        category: 'direktur' | 'pembina' | 'sekretaris' | 'pic' | 'sensei';
         image: string;
         kanjiRole?: string;
         description?: string;

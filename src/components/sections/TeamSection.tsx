@@ -96,7 +96,7 @@ export const TeamSection = () => {
                 <span className={`inline-flex px-3 py-1 text-xs font-bold rounded-full backdrop-blur-md border ${
                   member.category === 'direktur' 
                     ? 'bg-amber-500/90 text-white border-amber-400/50' 
-                    : member.category === 'sekretaris' || member.category === 'pic'
+                    : member.category === 'sekretaris' || member.category === 'pic' || member.category === 'pembina' || member.category === 'pembina'
                     ? 'bg-blue-600/90 text-white border-blue-500/50'
                     : 'bg-white/90 text-navy-900 border-white/50'
                 }`}>

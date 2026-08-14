@@ -68,9 +68,17 @@ export const id: TranslationData = {
           kanjiRole: '事務局長'
         },
         {
+          id: 'pembina',
+          name: 'Syamsul Yuda',
+          role: 'Pembina / Penasehat',
+          category: 'pembina',
+          image: '/team/syamsul-yuda.jpg',
+          kanjiRole: '顧問'
+        },
+        {
           id: 'pic',
           name: 'Suhendi',
-          role: 'PIC Support & Pendampingan',
+          role: 'PIC Support & Pendamping',
           category: 'pic',
           image: '/team/suhendi.jpg',
           kanjiRole: '支援責任者'
@@ -258,8 +266,8 @@ export const id: TranslationData = {
     badge: 'HUBUNGI KAMI',
     title: 'Mulai Perjalanan Anda',
     subtitle: 'Jangan ragu untuk bertanya. Tim kami siap membantu memberikan informasi detail tentang program yang sesuai untuk Anda.',
-    address: 'Jl. KH Abdullah Bin Nuh No.116 A, Sawah Gede, Kec. Cianjur, Kabupaten Cianjur, Jawa Barat 43212',
-    whatsapp: '+62 821-4822-2991',
+    address: 'Jl. Ir. H. Juanda KM.3 Blok A No. 1, Mekarsari Regency, Mekarsari - Cianjur - Jawa Barat - Indonesia',
+    whatsapp: '+62 818-0983-6149',
     email: 'rcktrainingcenter@gmail.com',
     cta: 'Hubungi via WA',
     gformCta: 'Daftar Online (Google Form)',

@@ -68,6 +68,14 @@ export const jp: TranslationData = {
           kanjiRole: '事務局長'
         },
         {
+          id: 'pembina',
+          name: 'Syamsul Yuda',
+          role: '顧問 / アドバイザー',
+          category: 'pembina',
+          image: '/team/syamsul-yuda.jpg',
+          kanjiRole: '顧問'
+        },
+        {
           id: 'pic',
           name: 'Suhendi',
           role: 'サポート・同行責任者',
@@ -258,8 +266,8 @@ export const jp: TranslationData = {
     badge: 'お問い合わせ',
     title: 'あなたの旅を始めましょう',
     subtitle: 'お気軽にご質問ください。あなたに最適なプログラムについて詳しくご案内いたします。',
-    address: 'Jl. KH Abdullah Bin Nuh No. 116 A, Sawah Gede, Cianjur District, Cianjur Regency, West Java 43212',
-    whatsapp: '+62 821-4822-2991',
+    address: 'Jl. Ir. H. Juanda KM.3 Blok A No. 1, Mekarsari Regency, Mekarsari - Cianjur - West Java - Indonesia',
+    whatsapp: '+62 818-0983-6149',
     email: 'rcktrainingcenter@gmail.com',
     cta: 'WhatsAppで問い合わせ',
     gformCta: 'オンライン申込み (Google Form)',
