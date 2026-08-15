@@ -10,9 +10,9 @@ export const AboutSection = () => {
   const { t } = useLanguage();
 
   const stats = [
-    { value: '1000+', label: t.about.stats.alumni, icon: Users },
-    { value: '50+', label: t.about.stats.partners, icon: Building2 },
-    { value: '5+', label: t.about.stats.experience, icon: Calendar },
+    { value: '300+', label: t.about.stats.alumni, icon: Users },
+    { value: '20+', label: t.about.stats.partners, icon: Building2 },
+    { value: '3+', label: t.about.stats.experience, icon: Calendar },
     { value: '98%', label: 'Success Rate', icon: Target },
   ];
 

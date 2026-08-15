@@ -14,7 +14,7 @@ export const jp: TranslationData = {
     subtitle: '日本語教育、職業技能、そして日本のビジネス文化の理解を通じて、あなたの未来を準備します。',
     ctaPrimary: '今すぐ登録',
     ctaSecondary: 'プログラムを見る',
-    trustBadges: ['500名以上の卒業生', '公式業界パートナー', '能力認定書'],
+    trustBadges: ['300名以上の卒業生', '公式業界パートナー', '能力認定書'],
     heroButtons: {
       ssw: 'SSW試験',
       jlpt: 'JLPT合格',

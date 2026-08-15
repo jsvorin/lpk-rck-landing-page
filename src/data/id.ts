@@ -14,7 +14,7 @@ export const id: TranslationData = {
     subtitle: 'Persiapkan masa depan Anda bersama program pelatihan bahasa Jepang, keterampilan kerja, dan pengenalan budaya profesional Jepang.',
     ctaPrimary: 'Daftar Sekarang',
     ctaSecondary: 'Lihat Program',
-    trustBadges: ['1000+ Alumni Berhasil', 'Partner Resmi Industri', 'Sertifikat Kompetensi'],
+    trustBadges: ['300+ Alumni Berhasil', 'Partner Resmi Industri', 'Sertifikat Kompetensi'],
     heroButtons: {
       ssw: 'SSW Test',
       jlpt: 'JLPT Passed',
