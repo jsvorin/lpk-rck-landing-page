@@ -90,6 +90,9 @@
 
 /* Custom Utilities */
 @layer utilities {
+  .font-jp {
+    font-family: var(--font-jp);
+  }
   .hero-gradient {
     background: linear-gradient(135deg, var(--color-navy-900) 0%, var(--color-navy-950) 100%);
   }

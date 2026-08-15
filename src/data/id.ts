@@ -220,24 +220,30 @@ export const id: TranslationData = {
   advantages: {
     badge: 'MENGAPA MEMILIH KAMI',
     title: 'Keunggulan Rumah Cipta Kerja',
+    prevButton: 'Sebelumnya',
+    nextButton: 'Selanjutnya',
     items: [
       {
         id: 'adv1',
         title: 'Fasilitas Asrama Terpadu',
         description: 'Asrama yang nyaman untuk membentuk kedisiplinan dan kebiasaan hidup seperti di Jepang.',
         icon: 'home',
+        image: '/asrama-terpadu.jpg',
       },
       {
         id: 'adv2',
         title: 'Kurikulum Standar Jepang',
         description: 'Materi pembelajaran yang selalu di-update sesuai standar JLPT, JFT, dan ujian SSW terkini.',
         icon: 'check-circle',
+        downloadPdf: '/kurikulum-silabus-lpk-rck.pdf',
+        downloadBtn: 'Download Kurikulum Silabus',
       },
       {
         id: 'adv3',
         title: 'Bimbingan Sampai Berangkat',
         description: 'Pendampingan penuh dari mulai pendaftaran, pengurusan dokumen, hingga tiba di Jepang.',
         icon: 'plane',
+        image: '/bimbingan-berangkat.jpg',
       },
     ],
   },

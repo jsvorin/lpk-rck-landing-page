@@ -220,24 +220,30 @@ export const jp: TranslationData = {
   advantages: {
     badge: '選ばれる理由',
     title: 'Rumah Cipta Kerjaの特徴',
+    prevButton: '前へ',
+    nextButton: '次へ',
     items: [
       {
         id: 'adv1',
         title: '統合された寮施設',
         description: '日本での生活習慣と規律を身につけるための快適な寮。',
         icon: 'home',
+        image: '/asrama-terpadu.jpg',
       },
       {
         id: 'adv2',
         title: '日本標準のカリキュラム',
         description: '最新のJLPT、JFT、SSW試験の基準に合わせて常に更新される学習教材。',
         icon: 'check-circle',
+        downloadPdf: '/kurikulum-silabus-lpk-rck.pdf',
+        downloadBtn: 'カリキュラム・シラバスをダウンロード',
       },
       {
         id: 'adv3',
         title: '出発までの完全サポート',
         description: '登録から書類作成、日本到着までを全面的にサポートします。',
         icon: 'plane',
+        image: '/bimbingan-berangkat.jpg',
       },
     ],
   },

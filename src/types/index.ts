@@ -19,6 +19,9 @@ export interface Advantage {
   title: string;
   description: string;
   icon: string;
+  image?: string;
+  downloadPdf?: string;
+  downloadBtn?: string;
 }
 
 export interface Testimonial {
@@ -136,6 +139,8 @@ export interface TranslationData {
   advantages: {
     badge: string;
     title: string;
+    prevButton: string;
+    nextButton: string;
     items: Advantage[];
   };
   faq: {
