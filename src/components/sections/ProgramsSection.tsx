@@ -47,7 +47,6 @@ export const ProgramsSection = () => {
   return (
     <Section id="program" bg="white">
       <SectionHeader
-        badge={t.programs.badge}
         title={t.programs.title}
         subtitle={t.programs.subtitle}
         centered

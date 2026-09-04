@@ -14,7 +14,6 @@ export const PricingSection = () => {
   return (
     <Section id="biaya" bg="gray">
       <SectionHeader
-        badge={t.pricing.badge}
         title={t.pricing.title}
         subtitle={t.pricing.subtitle}
         centered

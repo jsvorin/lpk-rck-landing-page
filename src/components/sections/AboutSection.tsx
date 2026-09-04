@@ -23,7 +23,6 @@ export const AboutSection = () => {
         {/* Left: Content */}
         <div>
           <SectionHeader
-            badge={t.about.badge}
             title={t.about.title}
           />
 
@@ -81,9 +80,6 @@ export const AboutSection = () => {
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           {/* Left Info */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold">
-              COMPANY PROFILE
-            </div>
             <h3 className="text-3xl font-extrabold text-navy-900 leading-tight">
               {t.about.companyProfile.title}
             </h3>
@@ -145,9 +141,6 @@ export const AboutSection = () => {
         className="mt-24 pt-16 border-t border-gray-200/80"
       >
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold mb-4">
-            REGULASI & LEGALITAS
-          </div>
           <h3 className="text-3xl md:text-4xl font-extrabold text-navy-900 mb-4 tracking-tight">
             {t.about.legal.title}
           </h3>

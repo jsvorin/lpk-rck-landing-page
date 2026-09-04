@@ -32,9 +32,6 @@ export const TeamSection = () => {
     >
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
         <div className="max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-bold mb-4">
-            {t.about.team.badge}
-          </div>
           <h3 className="text-3xl md:text-4xl font-extrabold text-navy-900 mb-4 tracking-tight">
             {t.about.team.title}
           </h3>

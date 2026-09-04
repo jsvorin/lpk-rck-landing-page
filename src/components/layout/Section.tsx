@@ -27,7 +27,7 @@ export const Section = ({ id, className, children, bg = 'white' }: SectionProps)
   );
 };
 
-export const SectionHeader = ({ badge, title, subtitle, centered = false, light = false }: { badge: string; title: string; subtitle?: string; centered?: boolean; light?: boolean }) => {
+export const SectionHeader = ({ title, subtitle, centered = false, light = false }: { title: string; subtitle?: string; centered?: boolean; light?: boolean }) => {
   return (
     <motion.div 
       variants={fadeUp}
@@ -36,12 +36,6 @@ export const SectionHeader = ({ badge, title, subtitle, centered = false, light 
       viewport={{ once: true, margin: "-100px" }}
       className={cn("mb-12 md:mb-16", centered ? "text-center mx-auto max-w-3xl" : "max-w-2xl")}
     >
-      <div className={cn("inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold mb-4", 
-        light ? "bg-white/10 text-blue-200" : "bg-blue-50 text-blue-600"
-      )}>
-        <span className="w-1.5 h-1.5 rounded-full bg-current" />
-        {badge}
-      </div>
       <h2 className={cn("text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4", light ? "text-white" : "text-navy-900")}>
         {title}
       </h2>

@@ -45,11 +45,6 @@ export const HeroSection = () => {
             initial="hidden"
             animate="visible"
           >
-            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-blue-200 text-xs font-bold mb-6 backdrop-blur-sm border border-white/5">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-              {t.hero.badge}
-            </motion.div>
-            
             <motion.h1 
               variants={fadeUp} 
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-[1.1] mb-6 tracking-tight"

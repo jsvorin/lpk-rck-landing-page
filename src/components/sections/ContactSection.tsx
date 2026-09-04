@@ -22,7 +22,6 @@ export const ContactSection = () => {
           viewport={{ once: true, margin: "-100px" }}
         >
           <SectionHeader
-            badge={t.contact.badge}
             title={t.contact.title}
             subtitle={t.contact.subtitle}
           />

@@ -65,7 +65,6 @@ export const AdvantagesSection = () => {
   return (
     <Section id="keunggulan" bg="dark" className="bg-navy-900 border-t border-navy-800">
       <SectionHeader
-        badge={t.advantages.badge}
         title={t.advantages.title}
         centered
         light

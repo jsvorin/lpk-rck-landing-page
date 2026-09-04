@@ -24,10 +24,6 @@ export const GallerySection = () => {
   return (
     <Section id="galeri" bg="white" className="py-20 md:py-28">
       <div className="text-center mb-12">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold mb-4 bg-blue-50 text-blue-600">
-          <span className="w-1.5 h-1.5 rounded-full bg-current" />
-          {language === 'id' ? 'GALERI KEGIATAN' : 'ギャラリー'}
-        </div>
         <h2 className="text-3xl md:text-4xl font-extrabold text-navy-900">
           {language === 'id' ? 'Sekilas Aktivitas Kami' : '私たちの活動'}
         </h2>

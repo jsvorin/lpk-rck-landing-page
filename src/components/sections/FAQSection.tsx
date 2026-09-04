@@ -11,8 +11,7 @@ export const FAQSection = () => {
   return (
     <Section id="faq" bg="gray">
       <div className="max-w-3xl mx-auto">
-        <SectionHeader 
-          badge={t.faq.badge}
+        <SectionHeader
           title={t.faq.title}
           centered
         />
