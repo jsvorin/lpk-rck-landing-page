@@ -69,10 +69,10 @@ export const jp: TranslationData = {
         },
         {
           id: 'pembina',
-          name: 'Syamsul Yuda',
+          name: 'Ali Nurdin',
           role: '顧問 / アドバイザー',
           category: 'pembina',
-          image: '/team/syamsul-yuda.jpg',
+          image: '/team/ali-nurdin.jpg',
           kanjiRole: '顧問'
         },
         {
