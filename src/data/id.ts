@@ -69,8 +69,8 @@ export const id: TranslationData = {
         },
         {
           id: 'pembina',
-          name: 'Ali Nurdin',
-          role: 'Pembina / Penasehat',
+          name: 'Ali Nurdin S.H',
+          role: 'Pembina',
           category: 'pembina',
           image: '/team/ali-nurdin.jpg',
           kanjiRole: '顧問'
