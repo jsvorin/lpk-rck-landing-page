@@ -121,7 +121,7 @@ export interface TranslationData {
     badge: string;
     title: string;
     subtitle: string;
-    apprenticeship: {
+    apprenticeship?: {
       name: string;
       price: string;
       period: string;

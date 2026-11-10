@@ -142,13 +142,6 @@ export const id: TranslationData = {
     subtitle: 'Kurikulum standar industri yang dirancang untuk memastikan Anda lulus wawancara dan siap bekerja.',
     items: [
       {
-        id: 'magang',
-        title: 'Magang Jepang (Ginou Jisshu)',
-        description: 'Program pemagangan teknis untuk usia 18-28 tahun di berbagai sektor industri Jepang.',
-        icon: 'briefcase',
-        features: ['Bahasa level N5', 'Pelatihan Fisik & Mental', 'Penempatan Kerja Terjamin'],
-      },
-      {
         id: 'tokutei',
         title: 'Tokutei Ginou (SSW)',
         description: 'Program visa pekerja terampil spesifik bagi mereka yang sudah memiliki sertifikat JLPT/JFT dan SSW.',
@@ -202,18 +195,21 @@ export const id: TranslationData = {
     badge: 'INVESTASI MASA DEPAN',
     title: 'Biaya Pendidikan Transparan',
     subtitle: 'Kami berkomitmen memberikan pendidikan berkualitas dengan biaya yang jelas tanpa biaya tersembunyi.',
-    apprenticeship: {
-      name: 'Pemagangan',
-      price: '5.000.000',
-      period: '3-4 Bulan',
-      features: ['Buku Panduan Belajar', 'Seragam Pelatihan', 'Sertifikat Kelulusan', 'Try Out JLPT N5', 'Konsultasi Penempatan'],
-    },
     tokuteiGinou: {
-      name: 'Tokutei Ginou',
-      price: '7.500.000',
+      name: 'Tokutei Ginou (N4)',
+      price: '5.000.000',
       period: '4-6 Bulan',
-      features: ['Semua Fasilitas N4', 'Try Out JLPT N4 / JFT-Basic', 'Persiapan Tes SSW', 'Simulasi Wawancara Kerja', 'Bimbingan Pemberkasan Visa'],
-      badge: 'Paling Diminati',
+      features: [
+        'Modul & Buku Panduan Belajar Lengkap',
+        'Seragam Pelatihan Resmi',
+        'Pembelajaran Bahasa Jepang N5 - N4',
+        'Try Out Rutin JLPT N4 / JFT-Basic',
+        'Persiapan & Bimbingan Tes SSW',
+        'Simulasi Wawancara Kerja Perusahaan Jepang',
+        'Bimbingan Pemberkasan & Pengurusan Visa',
+        'Sertifikat Kelulusan Resmi',
+      ],
+      badge: 'Program Unggulan',
     },
     cta: 'Konsultasi Biaya via WhatsApp',
   },
@@ -259,7 +255,7 @@ export const id: TranslationData = {
       {
         id: 'faq2',
         question: 'Apakah ada batasan usia untuk mendaftar?',
-        answer: 'Untuk program Magang (Ginou Jisshu) usia 18-28 tahun. Untuk program Tokutei Ginou usia minimal 18 tahun dan maksimal umumnya 35 tahun (tergantung perusahaan).',
+        answer: 'Untuk program Tokutei Ginou usia minimal 18 tahun dan maksimal umumnya 35 tahun (tergantung kebutuhan perusahaan penerima di Jepang).',
       },
       {
         id: 'faq3',
@@ -279,7 +275,7 @@ export const id: TranslationData = {
     gformCta: 'Daftar Online (Google Form)',
   },
   footer: {
-    description: 'Lembaga Pelatihan Kerja (LPK) resmi untuk program magang, Tokutei Ginou, dan Kaigo ke Jepang.',
+    description: 'Lembaga Pelatihan Kerja (LPK) resmi untuk program Tokutei Ginou dan persiapan karir kerja ke Jepang.',
     rights: 'Hak Cipta Dilindungi.',
   },
 };

@@ -57,17 +57,13 @@ export const ProgramsSection = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8"
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto"
       >
-        {t.programs.items.map((program, idx) => {
-          // Logic ditaruh di sini (Aman karena dibungkus kurung kurawal + ada return di bawah)
-          const isLastCard = idx === 2;
-
+        {t.programs.items.map((program) => {
           return (
             <motion.div
               key={program.id}
               variants={fadeUp}
-              className={isLastCard ? "md:col-span-2" : ""}
             >
               <Card className="h-full border-gray-200 hover:border-blue-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group overflow-hidden">
                 <CardHeader className="pb-4 relative z-10">

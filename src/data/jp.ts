@@ -142,13 +142,6 @@ export const jp: TranslationData = {
     subtitle: '面接に合格し、即戦力として働くための業界標準カリキュラム。',
     items: [
       {
-        id: 'magang',
-        title: '技能実習 (Ginou Jisshu)',
-        description: '日本の様々な産業分野における18〜28歳向けの技術実習プログラム。',
-        icon: 'briefcase',
-        features: ['N5レベルの日本語', '心身の訓練', '就職保証'],
-      },
-      {
         id: 'tokutei',
         title: '特定技能 (SSW)',
         description: 'JLPT/JFTおよびSSW試験の合格者を対象とした特定技能ビザプログラム。',
@@ -202,18 +195,21 @@ export const jp: TranslationData = {
     badge: '未来への投資',
     title: '透明性のある教育費用',
     subtitle: '隠れた費用なしに、明確なコストで質の高い教育を提供することをお約束します。',
-    apprenticeship: {
-      name: '技能実習',
-      price: '5.000.000',
-      period: '3〜4ヶ月',
-      features: ['学習ガイドブック', '訓練用制服', '修了証書', 'JLPT N5 模擬試験', '就職相談'],
-    },
     tokuteiGinou: {
-      name: '特定技能',
-      price: '7.500.000',
+      name: '特定技能 (N4)',
+      price: '5.000.000',
       period: '4〜6ヶ月',
-      features: ['N5の全施設', 'JLPT N4 / JFT 模擬試験', 'SSW試験対策', '面接シミュレーション', 'ビザ申請サポート'],
-      badge: '一番人気',
+      features: [
+        '学習ガイドブック＆教材一式',
+        '訓練用公式制服',
+        '日本語集中学習（N5〜N4）',
+        'JLPT N4 / JFT 定期模擬試験',
+        'SSW（特定技能）試験対策',
+        '日本企業面接シミュレーション',
+        'ビザ申請＆書類作成サポート',
+        '公式修了証書',
+      ],
+      badge: '主要プログラム',
     },
     cta: 'WhatsAppで費用相談',
   },
@@ -259,7 +255,7 @@ export const jp: TranslationData = {
       {
         id: 'faq2',
         question: '登録に年齢制限はありますか？',
-        answer: '技能実習プログラムは18〜28歳です。特定技能プログラムは18歳以上で、上限は一般的に35歳まで（企業により異なります）です。',
+        answer: '特定技能プログラムは18歳以上で、上限は一般的に35歳まで（受け入れ企業により異なります）です。',
       },
       {
         id: 'faq3',
@@ -279,7 +275,7 @@ export const jp: TranslationData = {
     gformCta: 'オンライン申込み (Google Form)',
   },
   footer: {
-    description: '日本への技能実習、特定技能、介護プログラムの公式な職業訓練機関（LPK）。',
+    description: '日本への特定技能プログラムおよび就労準備のための公式職業訓練機関（LPK）。',
     rights: 'All rights reserved.',
   },
 };
