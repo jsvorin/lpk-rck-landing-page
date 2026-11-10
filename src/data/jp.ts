@@ -204,7 +204,7 @@ export const jp: TranslationData = {
     subtitle: '隠れた費用なしに、明確なコストで質の高い教育を提供することをお約束します。',
     apprenticeship: {
       name: '技能実習',
-      price: '5.500.000',
+      price: '5.000.000',
       period: '3〜4ヶ月',
       features: ['学習ガイドブック', '訓練用制服', '修了証書', 'JLPT N5 模擬試験', '就職相談'],
     },

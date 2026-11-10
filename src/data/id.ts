@@ -204,7 +204,7 @@ export const id: TranslationData = {
     subtitle: 'Kami berkomitmen memberikan pendidikan berkualitas dengan biaya yang jelas tanpa biaya tersembunyi.',
     apprenticeship: {
       name: 'Pemagangan',
-      price: '5.500.000',
+      price: '5.000.000',
       period: '3-4 Bulan',
       features: ['Buku Panduan Belajar', 'Seragam Pelatihan', 'Sertifikat Kelulusan', 'Try Out JLPT N5', 'Konsultasi Penempatan'],
     },
